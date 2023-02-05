@@ -10,9 +10,15 @@ export default {
       base: "#A0A0A0",
       light: "#F4F4F4",
     },
+    red: {
+      base: "#FF5858",
+    },
   },
-  radius: "8px",
-  spacing: {},
+  radius: "4px",
+  wrapper: {
+    horizontal: "20px",
+    vertical: "20px",
+  },
   fonts: {
     sora100: "Sora_100Thin",
     sora200: "Sora_200ExtraLight",

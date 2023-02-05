@@ -3,6 +3,7 @@
     "jsx": "react-native",
     "strict": true,
     "baseUrl": "src",
+    "noImplicitAny": true,
     "allowSyntheticDefaultImports": true,
     "paths": {
       "business": ["business/*"],

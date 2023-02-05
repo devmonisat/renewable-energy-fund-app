@@ -2,6 +2,7 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import LoginScreen from "business/login";
+import DashboardScreen from "business/dashboard";
 
 const Stack = createNativeStackNavigator();
 
@@ -23,10 +24,9 @@ function PrivateStack() {
       <Stack.Group
         screenOptions={{
           headerShown: false,
-          presentation: "modal",
         }}
       >
-        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="Dashboard" component={DashboardScreen} />
       </Stack.Group>
     </Stack.Navigator>
   );
