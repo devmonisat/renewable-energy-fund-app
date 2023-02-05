@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "jsx": "react-native",
+    "strict": true,
+    "baseUrl": "src",
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "business": ["business/*"],
+      "core": ["core/*"],
+      "shared": ["shared/*"],
+      "assets": ["assets/*"]
+    }
+  },
+  "extends": "expo/tsconfig.base"
+}
