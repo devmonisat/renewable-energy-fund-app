@@ -23,8 +23,10 @@ import { Controller, useForm } from "react-hook-form";
 
 export default function Layout({
   onSubmit,
+  onSignUP,
 }: {
   onSubmit: (data: { email: string; password: string }) => void;
+  onSignUP: () => void;
 }) {
   const [showPassword, setShowPassword] = useState<boolean>(true);
   const {
@@ -101,7 +103,7 @@ export default function Layout({
             />
           </BoxButton>
 
-          <SignUpHereButton>
+          <SignUpHereButton onPress={onSignUP}>
             <LabelButton>
               Don’t have an account? <Underline>Sign up </Underline>here
             </LabelButton>

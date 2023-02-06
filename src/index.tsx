@@ -2,6 +2,8 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import LoginScreen from "business/login";
+import SignUPScreen from "business/signup";
+
 import DashboardScreen from "business/dashboard";
 
 const Stack = createNativeStackNavigator();
@@ -14,6 +16,7 @@ function PublicStack() {
       }}
     >
       <Stack.Screen name="Login" component={LoginScreen} />
+      <Stack.Screen name="SignUP" component={SignUPScreen} />
     </Stack.Navigator>
   );
 }
